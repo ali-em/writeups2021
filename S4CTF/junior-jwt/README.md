@@ -27,7 +27,7 @@ As we see in `main` function, the jwt is signed with `RS256` algorithm by defaul
 
 ### The Idea
 
-If we could find a way that server verifies the jwt using the same key that is jwt is signed with, we could easily change the role field and sign our jwt using the public key.
+If we could find a way that server verifies the jwt using the same key that jwt is signed with, we could easily change the role field and sign our jwt using the public key.
 
 In `HS256` algorithm, that is a symmetric algorithm, the jwt should be signed and verified using the same secret key. So, if we change the jwt algorithm to `HS256`, change the `role` value to `admin` and sign it with the public key, the server will also verify the jwt using public key.
 
