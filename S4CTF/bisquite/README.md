@@ -21,3 +21,18 @@ So we skip the first bytes and output it in a file called skipped, using `dd` co
 ```
 dd if=bisquite of=skipped skip=1099776 bs=1
 ```
+
+And then we can mount it:
+
+```
+mkdir mnt
+mount skipped mnt/
+```
+
+Now we can `cd` into `mnt` and see the flag in a `jps` image file.
+
+![flag.jps](screenshots/flag.png "flag")
+
+## Flag
+
+`S4CTF{r34LLy_L!k3_bisQu!73}`
