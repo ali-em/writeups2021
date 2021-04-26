@@ -8,6 +8,10 @@ Just one of [them](http://junior-jwt.peykar.io)!
 
 A zip file containing a PHP page source code. (You can see extracted files in [source](source/) folder in the repo)
 
+## TL;DR
+
+We should change the algorithm to `HS256` and change the role value in jwt to `admin` and sign it with the given public key.
+
 ## Writeup
 
 Looking at the source code, we see a class called `JWT` that provides `encode` and `decode` methods and also some helper functions for URL decoding.
